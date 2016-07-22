@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disk FileView - Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--Nav-->
+<nav class="">
+    <div class="container nav-bar">
+        <div class="row">
+            <div class="col-sm-9 list">
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-info btn-hover">Sign In</a>
+                    <a type="button" class="btn btn-info btn-hover">Sign Up</a>
+                    <a type="button" class="btn btn-info btn-hover">Forgot your Password? </a>
+                </div>
+            </div>
+            <div class="col-sm-3 logo">
+                <img src="img/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</nav>
+<!--Nav End -->
+
+<!--Header-->
+<header>
+    <div class="container header">
+        <div class="row">
+            <ul class="nav navbar-nav-center nav-list ">
+                <li><a href="#home">Upload</a></li>
+                <li><a href="#news">Premium</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">English
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">French</a></li>
+                    </ul>
+                </li>
+                <li class="icon">
+                    <a href="javscript:avoid(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+
+<!--Description-->
+<section class="description">
+    <div class="container c-des">
+        <div class="row des">
+            <div class="col-sm-12">
+                <h1>The maximum file size is 1GB</h1>
+             </div>
+        </div>
+        <!--Details-->
+        <div class="row details">
+            <div class="col-sm-12 col-md-6 col-centered">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">File Upload</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Remote URL Upload</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Copy Files</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <div class="fileUpload btn btn-default">
+                            <span>Upload Your Files<i class="icon-cloud-upload"></i></span>
+                            <div class="col-sm-12">
+                                <input type="file" class="upload" />
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-grey progress-bar-striped active" role="progressbar" aria-valuenow="70"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                70%
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info submit-upload btn-hover">Submit</button>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h5>You can enter up to 5 URLs, one URL per row </h5>
+
+                        <form class="form-horizontal" role="form">
+                            <textarea  class="form-control"  name="urls" id="url" cols="55" rows="6"></textarea>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="email">Recipient's Email:</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="pwd">Link Password:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="pwd" placeholder="Enter password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-9">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> I have read and agree to the TOS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-9">
+                                    <button type="submit" class="btn btn-info btn-hover">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h5>You can enter up to 5 URLs, one URL per row </h5>
+
+                        <form class="form-horizontal" role="form">
+                            <textarea   class="form-control" name="urls" id="url2" cols="55" rows="6"></textarea>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="email">Recipient's Email:</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email2" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="pwd">Link Password:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="pwd2" placeholder="Enter password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-9">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> I have read and agree to the TOS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-9">
+                                    <button type="submit" class="btn btn-info btn-hover">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <!--Details End-->
+    </div>
+</section>
+<!--Description End-->
+
+<!--Links-->
+<section class="links">
+    <div class="container c-links">
+        <div class="row link">
+            <div class="col-sm-4">
+                <h3>Home</h3>
+                <ul class="nav">
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3>Home</h3>
+                <ul class="nav">
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3>Home</h3>
+                <ul class="nav">
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Links End-->
+
+<section class="socials">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                    <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/PayPal.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="container footer">
+      <p>© 2016-2017 Disk FileView - All Rights Reserved</p>
+    </div>
+</footer>
+<!--Footer End-->
+
+
+<script>
+    function myFunction() {
+        document.getElementsByClassName("nav-list")[0].classList.toggle("responsive");
+    }
+</script>
+
+</body>
